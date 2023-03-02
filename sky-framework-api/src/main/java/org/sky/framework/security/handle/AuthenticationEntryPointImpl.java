@@ -1,4 +1,4 @@
-package org.sky.framework.config.security.handle;
+package org.sky.framework.security.handle;
 
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.web.AuthenticationEntryPoint;

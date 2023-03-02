@@ -1,4 +1,4 @@
-package org.sky.framework.config.security.annotation;
+package org.sky.framework.security.annotation;
 
 import java.lang.annotation.*;
 

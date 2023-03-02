@@ -1,4 +1,4 @@
-package org.sky.framework.config.security.aop;
+package org.sky.framework.security.aop;
 
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 @Order(3)//优先于RepeatSubmit切面
 public class NeedLoginAspect {
 
-    @Around(value = "@annotation(org.sky.framework.config.security.annotation.NeedLogin)")
+    @Around(value = "@annotation(org.sky.framework.security.annotation.NeedLogin)")
     public Object around(ProceedingJoinPoint joinPoint)throws Throwable{
         return joinPoint.proceed();
     }

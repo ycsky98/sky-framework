@@ -1,4 +1,4 @@
-package org.sky.framework.config.security.service;
+package org.sky.framework.security.service;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

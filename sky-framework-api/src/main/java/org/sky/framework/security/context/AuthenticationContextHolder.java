@@ -1,4 +1,4 @@
-package org.sky.framework.config.security.context;
+package org.sky.framework.security.context;
 
 import org.springframework.security.core.Authentication;
 
