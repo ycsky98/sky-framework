@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/sky-framework.iml" filepath="$PROJECT_DIR$/sky-framework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sky-framework-api/sky-framework-api.iml" filepath="$PROJECT_DIR$/sky-framework-api/sky-framework-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sky-framework-common/sky-framework-common.iml" filepath="$PROJECT_DIR$/sky-framework-common/sky-framework-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sky-framework-config/sky-framework-config.iml" filepath="$PROJECT_DIR$/sky-framework-config/sky-framework-config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sky-framework-system/sky-framework-system.iml" filepath="$PROJECT_DIR$/sky-framework-system/sky-framework-system.iml" />
+    </modules>
+  </component>
+</project>
