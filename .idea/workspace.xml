@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="764fb10c-a3c6-4d5d-8d68-40394db01a9e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sky-framework-api/src/main/java/org/sky/framework/security/service/SysUserLoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-framework-api/src/main/java/org/sky/framework/security/service/SysUserLoginService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sky-framework-config/src/main/java/org/sky/framework/config/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/sky-framework-config/src/main/java/org/sky/framework/config/exception/GlobalExceptionHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +122,7 @@
       <workItem from="1677735608724" duration="2062000" />
       <workItem from="1677738876741" duration="4684000" />
       <workItem from="1677838986240" duration="1572000" />
-      <workItem from="1677907684779" duration="7593000" />
+      <workItem from="1677907684779" duration="7948000" />
     </task>
     <servers />
   </component>
