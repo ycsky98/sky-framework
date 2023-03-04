@@ -67,6 +67,6 @@ login:
 jwt:
   config:
     ## 加密密钥
-    secret:
+    secret: asiuf62asd6daw125asd
     ## 过期时间
-    expire:
+    expire: 3600
