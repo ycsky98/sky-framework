@@ -4,12 +4,14 @@ import org.sky.framework.api.common.domain.SysUser;
 import org.sky.framework.config.jwt.JwtConfig;
 import org.sky.framework.security.context.AuthenticationContextHolder;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.concurrent.TimeUnit;
 
 @Service
 public class SysUserLoginService {
@@ -20,6 +22,9 @@ public class SysUserLoginService {
     @Autowired
     private JwtConfig jwtConfig;
 
+    @Autowired
+    private RedisTemplate<String, Object> redisTemplate;
+
     /**
      *
      * @param username
@@ -28,7 +33,6 @@ public class SysUserLoginService {
      */
     public String login(String username, String password) {
         Authentication authentication = null;
-
         try {
             //构建用户密码token凭证
             UsernamePasswordAuthenticationToken usernamePasswordAuthenticationToken =
@@ -47,6 +51,11 @@ public class SysUserLoginService {
         SysUser loginUser = (SysUser) authentication.getPrincipal();
 
         //生成token
-        return jwtConfig.createToken(loginUser.getUsername());
+        String token = jwtConfig.createToken(loginUser.getUsername());
+
+        //设置365天登陆(key:token, value:loginuser)
+        this.redisTemplate.opsForValue().set(token, loginUser, 365, TimeUnit.DAYS);
+
+        return token;
     }
 }

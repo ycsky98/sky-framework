@@ -26,7 +26,7 @@ public class JwtConfig {
      */
     public String createToken(String subject){
         Date now = new Date();
-        Date expireTime = new Date(now.getTime() + this.jwtProperties.getExpire() * 1000);
+        Date expireTime = new Date(now.getTime() + this.jwtProperties.getExpire() * 100000);
 
         return Jwts.builder()
                 .setHeaderParam("typ", "JWT")

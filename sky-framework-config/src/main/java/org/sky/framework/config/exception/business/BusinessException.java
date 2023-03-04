@@ -13,4 +13,8 @@ public class BusinessException extends RuntimeException{
      * 空构造方法，避免反序列化问题
      */
     public BusinessException() {}
+
+    public BusinessException(String message) {
+        super(message);
+    }
 }
