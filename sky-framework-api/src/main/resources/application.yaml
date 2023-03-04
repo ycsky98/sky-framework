@@ -62,3 +62,11 @@ login:
   header: TOKEN
   ## redis放重复前缀
   PREVENT_DUPLICATION_PREFIX: PREVENT_DUPLICATION_PREFIX
+
+## jwt配置
+jwt:
+  config:
+    ## 加密密钥
+    secret:
+    ## 过期时间
+    expire:
