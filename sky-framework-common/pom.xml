@@ -92,6 +92,13 @@
             <version>1.1.1</version>
         </dependency>
 
+        <!--处理LocalDateTime序列化和反序列化问题-->
+        <dependency>
+            <groupId>com.fasterxml.jackson.datatype</groupId>
+            <artifactId>jackson-datatype-jsr310</artifactId>
+            <version>2.13.0</version>
+        </dependency>
+
     </dependencies>
 
 </project>
