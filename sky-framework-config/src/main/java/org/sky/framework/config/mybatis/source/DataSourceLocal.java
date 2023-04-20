@@ -1,7 +1,5 @@
 package org.sky.framework.config.mybatis.source;
 
-import java.lang.annotation.Annotation;
-
 /**
  * @author yangcong
  *
