@@ -1,12 +1,13 @@
 package org.sky.framework.config.mybatis.properties;
 
+import org.sky.framework.config.yaml.YamlPropertySourceFactory;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 
 @Configuration
 @ConfigurationProperties(prefix = "spring.datasource.master")
-@PropertySource(value = "classpath:application.yaml", encoding = "UTF-8")
+@PropertySource(value = "classpath:application.yaml", encoding = "UTF-8", factory = YamlPropertySourceFactory.class)
 public class MasterDataSourceProperties {
 
     private String url;
